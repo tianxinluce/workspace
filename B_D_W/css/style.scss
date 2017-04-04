@@ -1,0 +1,153 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+}
+a,button,input,optgroup,select,textarea{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	/*去掉点击时的蓝色边框和半透明背景*/
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+ul,li,ol{
+	list-style:none;
+}
+@mixin full{
+	width:100%;
+	height:100%;
+	
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+html{
+	font-size:625%;
+}
+body{
+	font-size:16px;
+}
+html,body,.container{
+	@include full;
+	
+
+}
+/*----------万能清除浮动--------------*/
+.clear:after{
+			content:"";
+			width:0;
+			height:0;
+			display:block;
+			overflow:hidden;
+			font-size:0;
+			clear:both;
+		}
+.container{
+	@include full;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+	overflow:hidden;
+
+}
+/*__________________________头部header____________________________*/
+.header{
+	width:100%;
+	height:42px;
+	background:#1B1B20;
+	//@include pos(relative);
+	h1{
+		font-size:18px;
+		color:#fff;
+		text-align:center;
+		line-height:42px;
+	}
+}
+
+
+
+
+
+/*__________________________主体main____________________________*/
+#main{
+	width:100%;
+	-webkit-flex:1;
+	overflow-y:auto;
+}
+.rili_wrap{
+	width:100%;
+	background:#ccc;
+	line-height:.3rem;
+	text-align:center;
+	font-size:.1rem;
+	color:#666;
+	ol{
+		width:100%;
+		height:.4rem;
+		line-height:.4rem;
+		display:-webkit-flex;
+		li{
+			float:left;
+			background:#000;
+			-webkit-flex:1;
+			font-size:.12rem;
+			color:#fff;
+		}
+	}
+	table{
+		width:100%;
+		background:#fff;
+		border-collapse:collapse;
+		td{
+			width:14.28%;
+			border:1px solid #ccc;
+			background:#fff;
+			height:.5rem;
+			-webkit-flex:1;
+			@include pos(relative);
+			
+		}
+		small{
+			@include pos();
+			left:4px;
+			top:-4px;
+			color:#BB3F3F;
+		}
+	}
+	.prev{
+		background:#fff;
+		small{
+			color:#ccc;
+		}
+	}
+	.ruzhu{
+		background:#D4D4F5;
+
+		small{
+			color:#6B3535;font-weight:bold
+		}
+	}
+	.over{
+		background:#fff;
+
+		small{
+			color:#AF9595;font-weight:bold
+		}
+	}
+	em{
+		@include pos();
+		right:4px;
+		bottom:-4px;
+		color:#fff;
+		font-style:normal;
+	}
+	b{
+		@include pos();
+		right:4px;
+		bottom:-4px;
+		color:#fff;
+		font-style:normal;
+		font-weight:400;
+	}
+}

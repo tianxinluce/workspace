@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/baida.css">
+</head>
+<body>
+		<div class="container" id="hotelList">
+		<!-- 	头部 -->
+			<header class="hotel_header" id="hotel_header">
+					<a href="BAI_DA_WO.html" class="hotel_back">返回</a>
+					<h2><span></span>间酒店</h2>
+			</header>
+		<!-- 	主体 -->
+			<nav class="hotel_nav">
+				<p>入住<input type="text" class="date_in" readOnly></p>
+				<p>离店<input type="text" class="date_out"readOnly></p>
+				<a href="" class="hotel_ri">修改<img src="../images/calendar_right.png" alt=""></a>
+			</nav>
+			<div class="hotel_main" id="hotel_main">
+				<section class="hotel_se" id="hotel_se">
+					<div id="hotel_se_box"></div>
+				</section>
+			</div>
+			<!-- 页脚 -->
+			<footer class="hotel_footer" id="hotel_footer">
+				<h6>排序<b></b></h6>
+				<h6>价格<b></b></h6>
+				<h6>品牌<b></b></h6>
+				<h6>星级<b></b></h6>
+				<!-- 排序 -->
+				<div class="order  foo">
+					<ul>
+						<li><input type="radio" id="1" name="b" data-tit="1"><label for="1"></label>不限</li>
+						<li><input type="radio" id="b" name="b" data-tit="2"><label for="b"></label>由远到近</li>
+						<li><input type="radio" id="c" name="b" data-tit="3"><label for="c"></label>由近到远</li>
+					</ul>
+				</div>	
+				<!-- 价格 -->
+				<div class="price  foo">
+					<ul>
+						<li><input type="radio" id="2" name="Q" data-tit="1"><label for="2"></label>不限</li>
+						<li><input type="radio" id="d" name="Q" data-tit="2"><label for="d"></label>100以下</li>
+						<li><input type="radio" id="e" name="Q" data-tit="3"><label for="e"></label>100元-200元</li>
+						<li><input type="radio" id="f" name="Q" data-tit="4"><label for="f"></label>200元-300元</li>
+						<li><input type="radio" id="g" name="Q" data-tit="5"><label for="g"></label>300元以上</li>
+					</ul>
+				</div>
+				<!-- 品牌 -->
+				<div class="brand  foo">
+					<ul>
+						<li><input type="radio" id="3" name="W" data-tit='1'><label for="3"></label>不限</li>
+						<li><input type="radio" id="h" name="W" data-tit='2'><label for="h"></label>汉庭酒店</li>
+						<li><input type="radio" id="i" name="W" data-tit='3'><label for="i"></label>假日山水酒店</li>
+						<li><input type="radio" id="g" name="W" data-tit='4'><label for="g"></label>四季酒店</li>
+						<li><input type="radio" id="k" name="W" data-tit='5'><label for="k"></label>驿家365</li>
+					</ul>
+				</div>
+				<!-- 星级 -->
+				<div class="satellite  foo">
+					<ul>
+						<li><input type="radio" id="4" name="U" data-tit='1'><label for="4"></label>不限</li>
+						<li><input type="radio" id="l" name="U" data-tit='2'><label for="l"></label>二星级以下/经济型</li>
+						<li><input type="radio" id="m" name="U" data-tit='3'><label for="m"></label>三星</li>
+						<li><input type="radio" id="n" name="U" data-tit='4'><label for="n"></label>四星</li>
+						<li><input type="radio" id="o" name="U" data-tit='5'><label for="o"></label>五星</li>
+					</ul>
+				</div>
+			</footer>
+					</div>
+		<script src="../js/zepto.min.js"></script>
+		<script src="../js/iscroll.js"></script>
+		<script src="../js/pagram.js"></script><!-- 获取地地址栏参数 -->
+	 	<script src="../js/pp.js"></script>
+		<script src="../js/hotelList.js"></script>
+		<script>
+			
+
+			document.documentElement.style.fontSize=document.documentElement.clientWidth/6.4+'px';
+		</script>
+</body>
+</html>
